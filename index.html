@@ -3,7 +3,7 @@
       <style>
          body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #f2f2f2, #000000);
+            background-color: linear-gradient(to bottom, #f2f2f2, #000000);
             margin: 0;
             padding: 150px;
          }
@@ -13,6 +13,7 @@
             font-weight: bold;
             margin-bottom: 10px;
             text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
          }
          h2 {
             color: #666;
@@ -20,6 +21,7 @@
             font-weight: bold;
             margin-top: 20px;
             margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
          }
          ul {
             list-style-type: none;
@@ -46,6 +48,7 @@
             font-size: 20px;
             font-weight: bold;
             margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
          }
          .post-content {
             color: #666;
@@ -60,55 +63,120 @@
          /* BEGIN: Additional Styles */
          .post-title {
             color: #ff6600;
+            text-decoration: underline;
          }
          .post-content {
             color: #424040;
+            font-style: italic;
          }
          .post-likes {
             color: #0019d6;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
          }
          /* END: Additional Styles */
+         /* BEGIN: Custom Styles */
+         .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         }
+         .post-list {
+            margin-top: 30px;
+         }
+         /* END: Custom Styles */
+         /* BEGIN: New Styles */
+         .post-list li:nth-child(odd) {
+            background-color: #f9f9f9;
+         }
+         .post-list li:nth-child(even) {
+            background-color: #e9e9e9;
+         }
+         /* END: New Styles */
+         /* BEGIN: Beautiful Styles */
+         body {
+            background: linear-gradient(to bottom, #f2f2f2, #ffffff);
+         }
+         h1 {
+            color: #ff6600;
+            font-size: px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+         }
+         h2 {
+            color: #333;
+            font-size: 24px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+         }
+         .container {
+            padding: 40px;
+            background-color: #f9f9f9;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+         }
+         .post-title {
+            color: #ff6600;
+            font-size: 24px;
+            text-decoration: none;
+         }
+         .post-content {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.5;
+         }
+         .post-likes {
+            color: #0019d6;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+         }
+         /* END: Beautiful Styles */
       </style>
    </head>
    <body>
-      <h1>DE~CORATIFS</h1>
-      <h2>Posts:</h2>
-      <ul>
-         <li>
-            <div class="post-title">Explore Paris's fashion scene over five days:</div>
-            <div class="post-content">
-               Day 1: Discover fashion history at Musée des Arts Décoratifs and Palais Galliera.<br>
-               Day 2: Explore luxury boutiques on Avenue Montaigne and Rue du Faubourg Saint-Honoré.<br>
-               Day 3: Wander Le Marais for indie boutiques and concept stores.<br>
-               Day 4: Experience fashion-art fusion at Palais de Tokyo and luxury shopping near Place Vendôme.<br>
-               Day 5: Engage in fashion workshops and spot street style in trendy neighborhoods.
-            </div>
-            <div class="post-likes">(10 likes)</div>
-         </li>
-         <li>
-            <div class="post-title">Check out this cool article...</div>
-            <div class="post-content">
-               Title: "Adapting to the Transformative Real Estate Market"<br>
-               Real estate investment undergoes profound shifts amidst changing demographics,
-               technological advancements, and sustainability concerns. Urbanization, remote work,
-               and ESG criteria reshape demand. Investors must diversify portfolios, leverage data 
-               insights, and maintain a long-term perspective. Flexibility and innovation are vital 
-               in navigating this dynamic landscape, ensuring resilience and growth amid evolving trends.
-            </div>
-            <div class="post-likes">(5 likes)</div>
-         </li>
-         <li>
-            <div class="post-title">Just had a great lunch!</div>
-            <div class="post-content">
-               Title: "Elevating Your Lunch Experience: Nourishment and Connection"<br>
-               Lunch is more than a meal; it's a chance to refuel and connect. Choose balanced nutrition, 
-               practice mindful eating, and stay hydrated. Foster social bonds by sharing meals, engaging 
-               in meaningful conversations, and unplugging from devices. Elevate your experience with culinary 
-               exploration, al fresco dining, and personal rituals. Embrace lunch as a moment to recharge, 
-               connect, and savor life's simple pleasures.
-            </div>
-            <div class="post-likes">(2 likes)</div>
-         </li>
-      </ul>
+      <div class="container">
+         <h1>DE~CORATIFS</h1>
+         <h2>Posts:</h2>
+         <ul class="post-list">
+            <li>
+               <div class="post-title">Explore Paris's fashion scene over five days:</div>
+               <div class="post-content">
+                  Day 1: Discover fashion history at Musée des Arts Décoratifs and Palais Galliera.<br>
+                  Day 2: Explore luxury boutiques on Avenue Montaigne and Rue du Faubourg Saint-Honoré.<br>
+                  Day 3: Wander Le Marais for indie boutiques and concept stores.<br>
+                  Day 4: Experience fashion-art fusion at Palais de Tokyo and luxury shopping near Place Vendôme.<br>
+                  Day 5: Engage in fashion workshops and spot street style in trendy neighborhoods.
+               </div>
+               <div class="post-likes">(10 likes)</div>
+            </li>
+            <li>
+               <div class="post-title">Check out this cool article...</div>
+               <div class="post-content">
+                  Title: "Adapting to the Transformative Real Estate Market"<br>
+                  Real estate investment undergoes profound shifts amidst changing demographics,
+                  technological advancements, and sustainability concerns. Urbanization, remote work,
+                  and ESG criteria reshape demand. Investors must diversify portfolios, leverage data 
+                  insights, and maintain a long-term perspective. Flexibility and innovation are vital 
+                  in navigating this dynamic landscape, ensuring resilience and growth amid evolving trends.
+               </div>
+               <div class="post-likes">(5 likes)</div>
+            </li>
+            <li>
+               <div class="post-title">Just had a great lunch!</div>
+               <div class="post-content">
+                  Title: "Elevating Your Lunch Experience: Nourishment and Connection"<br>
+                  Lunch is more than a meal; it's a chance to refuel and connect. Choose balanced nutrition, 
+                  practice mindful eating, and stay hydrated. Foster social bonds by sharing meals, engaging 
+                  in meaningful conversations, and unplugging from devices. Elevate your experience with culinary 
+                  exploration, al fresco dining, and personal rituals. Embrace lunch as a moment to recharge, 
+                  connect, and savor life's simple pleasures.
+               </div>
+               <div class="post-likes">(2 likes)</div>
+            </li>
+         </ul>
+      </div>
    </body>
 </html>
